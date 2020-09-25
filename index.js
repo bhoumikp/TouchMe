@@ -26,3 +26,8 @@ function changeCol() {
 
 
 	document.querySelector("button").addEventListener("click", changeCol);
+	document.addEventListener("keydown", function(event) {
+		if (event.key == "Enter") {
+			changeCol();
+		}
+	})
